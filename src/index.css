@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Permanent+Marker&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.05em;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    text-align: center;
+    padding: 0.25em;
+    -webkit-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.5);
+    background-color: yellow;
+    user-select: none;
+    max-width: 20%;
+    word-wrap: break-word;
+    border-radius: 0.5em;
+}
+
+.post-text {
+    width: 100%;
+}
+
+.react-draggable-dragging {
+    z-index: 10;
+}
+
+.freedom-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit-post {
+    display: flex;
+    gap: 0.25em;
+}
+
+.freedom-form-input {
+    padding: 0.1em 0.25em;
+    border: 1px solid black;
+    border-radius: 0.2em;
+    -webkit-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.app {
+    height: 100vh;
+    width: 100%;
+    background: #eab92d;
+    background: -moz-radial-gradient(
+        center,
+        ellipse cover,
+        #eab92d 57%,
+        #c79810 99%
+    );
+    background: -webkit-gradient(
+        radial,
+        center center,
+        0px,
+        center center,
+        100%,
+        color-stop(57%, #eab92d),
+        color-stop(99%, #c79810)
+    );
+    background: -webkit-radial-gradient(
+        center,
+        ellipse cover,
+        #eab92d 57%,
+        #c79810 99%
+    );
+    background: -o-radial-gradient(
+        center,
+        ellipse cover,
+        #eab92d 57%,
+        #c79810 99%
+    );
+    background: -ms-radial-gradient(
+        center,
+        ellipse cover,
+        #eab92d 57%,
+        #c79810 99%
+    );
+    background: radial-gradient(ellipse at center, #eab92d 57%, #c79810 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eab92d', endColorstr='#c79810', GradientType=1);
+}
+
+.freedom-wall-title {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 70%;
+    }
+}
